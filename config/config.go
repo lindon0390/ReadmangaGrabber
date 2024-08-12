@@ -177,7 +177,7 @@ func GetURLs() data.CurrentURLS {
 	tmpData := map[string]string{}
 	curURLs := data.CurrentURLS{}
 
-	resp, err := http.Get("https://raw.githubusercontent.com/lirix360/ReadmangaGrabber/master/lib_urls.json")
+	resp, err := http.Get("https://raw.githubusercontent.com/daz9e/ReadmangaGrabber/master/lib_urls.json")
 	if err != nil {
 		logger.Log.Error(err)
 		return curURLs
